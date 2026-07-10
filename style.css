@@ -1,6 +1,6 @@
 /* ===========================
-   PayNakki Official Website
-   Version 1.0
+   PAYNAKKI PROFESSIONAL CSS
+   Version 2.0
 =========================== */
 
 *{
@@ -10,84 +10,90 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f8fc;
-color:#333;
-line-height:1.6;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f8fb;
+color:#222;
+line-height:1.7;
 }
 
 header{
-background:#0057b8;
-padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:18px 8%;
+background:#0057d9;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
 .logo h2{
-color:#fff;
-font-size:30px;
+font-size:28px;
+font-weight:bold;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:22px;
+margin-left:20px;
 font-weight:bold;
 transition:.3s;
 }
 
 nav a:hover{
-color:#ffd24d;
+color:#ffd700;
 }
 
 .hero{
-background:linear-gradient(135deg,#0057b8,#00bfff);
-color:white;
-padding:120px 20px;
 text-align:center;
+padding:90px 20px;
+background:linear-gradient(135deg,#0057d9,#00a0ff);
+color:white;
 }
 
 .hero h1{
-font-size:52px;
+font-size:48px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:35px;
+font-size:20px;
+max-width:700px;
+margin:auto;
 }
 
 .button{
-background:white;
-color:#0057b8;
+display:inline-block;
+margin-top:35px;
 padding:15px 35px;
-border-radius:40px;
+background:white;
+color:#0057d9;
 text-decoration:none;
 font-weight:bold;
-display:inline-block;
+border-radius:40px;
 transition:.3s;
 }
 
 .button:hover{
-background:#ffd24d;
+background:#ffd700;
 color:#000;
+transform:translateY(-3px);
 }
 
 .features{
-width:90%;
-max-width:1200px;
-margin:70px auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:60px 8%;
 }
 
 .card{
 background:white;
 padding:30px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.12);
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
 transition:.3s;
 }
 
@@ -96,16 +102,25 @@ transform:translateY(-8px);
 }
 
 .card h3{
-color:#0057b8;
 margin-bottom:15px;
+color:#0057d9;
 }
 
 footer{
-background:#111;
+background:#0b1220;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:60px;
+padding:30px;
+margin-top:40px;
+}
+
+footer a{
+color:#8dc6ff;
+text-decoration:none;
+}
+
+footer a:hover{
+color:white;
 }
 
 @media(max-width:768px){
@@ -124,7 +139,7 @@ margin:10px 0;
 }
 
 .hero h1{
-font-size:36px;
+font-size:34px;
 }
 
 .hero p{
