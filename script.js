@@ -1,33 +1,33 @@
-
-
-script.js
-Step 3
-
-Paste this code into the editor.
-
-/* ===================================
-   PayNakki Official Website
-   JavaScript Version 1.0
-=================================== */
-
-console.log("Welcome to PayNakki!");
+// PayNakki Premium JavaScript
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const button = document.querySelector(".button");
-
-    if(button){
-
-        button.addEventListener("click", function(e){
-
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
             e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 
-            alert(
-                "Thank you for visiting PayNakki!\n\nOur platform is currently under development.\n\nStay tuned for exciting updates."
-            );
+    // Button hover animation
+    const buttons = document.querySelectorAll(".button");
 
+    buttons.forEach(button => {
+        button.addEventListener("mouseenter", () => {
+            button.style.transform = "scale(1.05)";
         });
 
-    }
+        button.addEventListener("mouseleave", () => {
+            button.style.transform = "scale(1)";
+        });
+    });
+
+    console.log("PayNakki Premium Website Loaded Successfully.");
 
 });
